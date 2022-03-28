@@ -9,9 +9,142 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(41, 41, 48);
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
+/* Card */
 
 .card {
   height: 375px;
   width: 375px;
+  background-image: linear-gradient(rgb(37, 39, 78), rgb(27, 27, 49));
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite {
+  background-color: rgb(43, 46, 82);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.card--header {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.card--text {
+  color: rgb(192, 192, 192);
+  margin-top: 0.3rem;
+  line-height: 25px;
+  font-size: 0.9rem;
+}
+
+.card--rating-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: auto;
+  border: none;
+  background-color: rgb(37, 40, 71);
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(44, 47, 83);
+}
+
+.btn--active {
+  background-color: rgb(255, 136, 0);
+  color: white;
+}
+.btn--active:hover {
+  background-color: rgb(255, 136, 0);
+}
+
+.card--submit-button {
+  margin-top: 1.3rem;
+  height: 55px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.card--submit-button:hover {
+  background-color: white;
+  color: rgb(255, 136, 0);
+}
+
+/* Thank You Card */
+
+.thank {
+  height: 375px;
+  width: 375px;
+  background-image: linear-gradient(rgb(37, 39, 78), rgb(27, 27, 49));
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.thank--rating {
+  color: rgb(255, 136, 0);
+  padding: 10px;
+  background-color: rgb(37, 40, 71);
+  border-radius: 50px;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+}
+
+.thank--header {
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.thank--text {
+  margin-top: 1rem;
+  color: rgb(192, 192, 192);
+}
+
+.back {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back:hover {
+  transform: translateX(-5px);
+  color: rgb(255, 136, 0);
 }
